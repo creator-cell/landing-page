@@ -13,7 +13,6 @@ export default function Home() {
       <div className="flex flex-col gap-y-5">
         <CustomHeading title="About Us" className="text-white text-center" >
           About us
-
         </CustomHeading>
         <AboutUs />
       </div>
