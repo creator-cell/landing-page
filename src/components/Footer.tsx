@@ -9,14 +9,13 @@ const Footer = () => {
 
     return (
         <footer className='bg-black text-gray-50  py-12 border-t-[1px] border-gray-600 '>
-            <div className=' container space-y-8 mx-auto '>
-                <div className='flex justify-between items-start  w-full'>
+            <div className=' container space-y-8 '>
+                <div className='flex justify-between items-start  '>
                     <div className=''>
-                        <Image src={logo} alt="logo" className='w-24 h-24' />
+                        <Image src={logo} alt="logo" className=' w-16 h-16 sm:w-24 sm:h-24 ' />
                     </div>
 
-                    <div className='grid grid-cols-2 gap-6 '>
-
+                    <div className='grid grid-cols-2 gap-3 sm:gap-6  '>
                         {footerData.find((data) => data.title === "FooterLinks")?.sections.map((section, index) => (
                             <div key={index}>
                                 <h3 className="font-bold mb-2">{section.section}</h3>
@@ -35,7 +34,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='space-y-2 flex flex-col items-center justify-center'>
-                    <div className='flex items-center gap-x-3 text-[13px]'>
+                    <div className='flex items-center gap-x-3 text-[13px] flex-wrap'>
                         <Link href={"/#"} className='' >X</Link>
                         <Link href={"/#"} className='' >Facebook</Link>
                         <Link href={"/#"} className='' >LinkedIn</Link>

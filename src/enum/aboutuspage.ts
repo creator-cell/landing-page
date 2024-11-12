@@ -19,11 +19,11 @@ export const aboutUsTop: AboutUsTopType = {
     description: [
         {
             content:
-                "BigCommerce (Nasdaq: BIGC) is a leading open SaaS and composable ecommerce platform that empowers brands and retailers of all sizes to build, innovate and grow their businesses online. BigCommerce provides its customers sophisticated enterprise-grade functionality, customization and performance with simplicity and ease-of-use. Tens of thousands of B2C and B2B companies across 150 countries and numerous industries rely on BigCommerce, including Burrow, Coldwater Creek, Francesca’s, Harvey Nichols, King Arthur Baking Co., MKM Building Supplies, United Aqua Group and Uplift Desk. For more information, please visit ",
+                "Front Cloud (Nasdaq: BIGC) is a leading open SaaS and composable ecommerce platform that empowers brands and retailers of all sizes to build, innovate and grow their businesses online. Front Cloud provides its customers sophisticated enterprise-grade functionality, customization and performance with simplicity and ease-of-use. Tens of thousands of B2C and B2B companies across 150 countries and numerous industries rely on Front Cloud, including Burrow, Coldwater Creek, Francesca’s, Harvey Nichols, King Arthur Baking Co., MKM Building Supplies, United Aqua Group and Uplift Desk. For more information, please visit ",
         },
         {
-            content: "www.bigcommerce.com",
-            link: "https://www.bigcommerce.com",
+            content: "www.frontCloud.com",
+            link: "https://www.frontCloud.com",
             color: "#0B42CC",
             hoverColor: "#121118",
             className: "text-[#0B42CC]  hover:text-[#121118]"
@@ -85,7 +85,7 @@ interface servicesAndExperienceType {
 }
 
 export const servicesAndExperience: servicesAndExperienceType = {
-    title: "BigCommerce by the Numbers",
+    title: "Front Cloud by the Numbers",
     numberRepresentation: [
         {
             number: "2009",
@@ -126,7 +126,7 @@ export const servicesAndExperience: servicesAndExperienceType = {
     ],
     latestNews: [
         {
-            title: "See the latest Bigcommerce news",
+            title: "See the latest Front Cloud news",
             link: "/news",
             className: "text-[#0B42CC]  hover:text-[#121118]"
         }
@@ -145,7 +145,7 @@ export const visionContent: visionType[] = [
     },
     {
         title: "Team on a Mission",
-        content: "BigCommerce is made up of amazing individuals, but it’s only through teamwork that we achieve greatness. We’re committed to helping our customers by working together with equal parts humility and ambition."
+        content: "Front Cloud is made up of amazing individuals, but it’s only through teamwork that we achieve greatness. We’re committed to helping our customers by working together with equal parts humility and ambition."
     },
     {
         title: "Think Big",
@@ -167,13 +167,13 @@ interface insideContentType {
 
 export const insideContent: insideContentType[] = [
     {
-        content: "Our employees bring the BigCommerce mission to life by empowering a community of merchants to reach their fullest potential. We believe in the same unlimited potential for our employees. "
+        content: "Our employees bring the Front Cloud mission to life by empowering a community of merchants to reach their fullest potential. We believe in the same unlimited potential for our employees. "
     },
     {
-        content: "At BigCommerce, employees own their personal development through hands-on experience, stepping up to new opportunities, and the chance to contribute on projects that are redefining the ecommerce industry."
+        content: "At Front Cloud, employees own their personal development through hands-on experience, stepping up to new opportunities, and the chance to contribute on projects that are redefining the ecommerce industry."
     },
     {
-        content: "Here’s what a day in the life of a BigCommerce employee looks like."
+        content: "Here’s what a day in the life of a Front Cloud employee looks like."
     }
 ]
 
@@ -209,7 +209,7 @@ export const locationContent: locationContentType[] = [
             alt: "Sydney"
         },
         title: "Austin, Texas / Four Points",
-        description: "Our headquarters is set amongst trees and nature trails in the beautiful hills of Austin. We're located only miles from the live music capital of Texas that is downtown and just a few minutes from the leisure and sporting fun of Lake Travis. The offices of Four Points is home to the BigCommerce Sales, Support, Operations, G&A Support, Marketing and Design teams."
+        description: "Our headquarters is set amongst trees and nature trails in the beautiful hills of Austin. We're located only miles from the live music capital of Texas that is downtown and just a few minutes from the leisure and sporting fun of Lake Travis. The offices of Four Points is home to the Front Cloud Sales, Support, Operations, G&A Support, Marketing and Design teams."
     },
     {
         image: {
@@ -233,7 +233,7 @@ export const locationContent: locationContentType[] = [
             alt: "Sydney"
         },
         title: "London, United Kingdom",
-        description: "The BigCommerce London office is home to a thriving Sales, Marketing and Professional Services teams. It’s centrally located in the hustle and bustle of the city near the St. Paul’s Cathedral, London Bridge and the Tate Museum."
+        description: "The Front Cloud London office is home to a thriving Sales, Marketing and Professional Services teams. It’s centrally located in the hustle and bustle of the city near the St. Paul’s Cathedral, London Bridge and the Tate Museum."
     },
     {
         image: {
@@ -281,10 +281,10 @@ export const experiencedExecutives: commonInfoCardWithActionType[] = [
         },
         name: "Brent Bellm",
         designation: "Chief Executive Officer",
-        description: [{ text: "Brent Bellm is the Chief Executive Officer of BigCommerce. Brent has more than 20 years of experience in ecommerce, software and technology, and has held executive leadership roles at HomeAway, PayPal and eBay. He is a graduate of Stanford University and the Stanford Graduate School of Business." }],
+        description: [{ text: "Brent Bellm is the Chief Executive Officer of Front Cloud. Brent has more than 20 years of experience in ecommerce, software and technology, and has held executive leadership roles at HomeAway, PayPal and eBay. He is a graduate of Stanford University and the Stanford Graduate School of Business." }],
         button: {
             text: "View Bio",
-            link: "https://www.bigcommerce.com/company/leadership/brent-bellm/"
+            link: "https://www.front Cloud.com/company/leadership/brent-bellm/"
         }
     },
     {
@@ -294,10 +294,10 @@ export const experiencedExecutives: commonInfoCardWithActionType[] = [
         },
         name: "Daniel Lentz",
         designation: "Chief Financial Officer",
-        description: [{ text: "Daniel is the Chief Financial Officer of BigCommerce. He has over two decades of experience guiding the financial and operational functions within industry leaders including Dell, Procter & Gamble and RetailMeNot." }],
+        description: [{ text: "Daniel is the Chief Financial Officer of Front Cloud. He has over two decades of experience guiding the financial and operational functions within industry leaders including Dell, Procter & Gamble and RetailMeNot." }],
         button: {
             text: "View Bio",
-            link: "https://www.bigcommerce.com/company/leadership/daniel-lentz/"
+            link: "https://www.front Cloud.com/company/leadership/daniel-lentz/"
         }
     },
     {
@@ -307,10 +307,10 @@ export const experiencedExecutives: commonInfoCardWithActionType[] = [
         },
         name: "Travis Hess",
         designation: "President",
-        description: [{ text: "Travis became President of BigCommerce in May 2024. With more than 15 years of senior leadership positions at top commerce agencies and consultancies including Accenture, Travis serves as BigCommerce’s go-to-market leader to drive top-line growth and profitability." }],
+        description: [{ text: "Travis became President of Front Cloud in May 2024. With more than 15 years of senior leadership positions at top commerce agencies and consultancies including Accenture, Travis serves as Front Cloud’s go-to-market leader to drive top-line growth and profitability." }],
         button: {
             text: "View Bio",
-            link: "https://www.bigcommerce.com/company/leadership/travis-hess/"
+            link: "https://www.front Cloud.com/company/leadership/travis-hess/"
         }
     },
     {
@@ -320,10 +320,10 @@ export const experiencedExecutives: commonInfoCardWithActionType[] = [
         },
         name: "Russell Klein",
         designation: "Chief Commercial Officer",
-        description: [{ text: "Russell is the Chief Commercial Officer of BigCommerce. He brings more than 20 years of management experience spanning M&A, investments, joint ventures, business and corporate development." }],
+        description: [{ text: "Russell is the Chief Commercial Officer of Front Cloud. He brings more than 20 years of management experience spanning M&A, investments, joint ventures, business and corporate development." }],
         button: {
             text: "View Bio",
-            link: "https://www.bigcommerce.com/company/leadership/russell-klein/"
+            link: "https://www.front Cloud.com/company/leadership/russell-klein/"
         }
     },
     {
@@ -333,10 +333,10 @@ export const experiencedExecutives: commonInfoCardWithActionType[] = [
         },
         name: "Lisa Eggerton",
         designation: "Chief Marketing Officer",
-        description: [{ text: "Lisa is the Chief Marketing Officer of BigCommerce. She has 20+ years of experience scaling high-growth companies with a focus on enterprise SaaS. In her multiple executive roles, she's been responsible for setting company vision and strategy, driving business performance through organic growth, global expansion and M&A, and navigating corporate exits." }],
+        description: [{ text: "Lisa is the Chief Marketing Officer of Front Cloud. She has 20+ years of experience scaling high-growth companies with a focus on enterprise SaaS. In her multiple executive roles, she's been responsible for setting company vision and strategy, driving business performance through organic growth, global expansion and M&A, and navigating corporate exits." }],
         button: {
             text: "View Bio",
-            link: "https://www.bigcommerce.com/company/leadership/lisa-eggerton/"
+            link: "https://www.front Cloud.com/company/leadership/lisa-eggerton/"
         }
     },
     {
@@ -345,11 +345,11 @@ export const experiencedExecutives: commonInfoCardWithActionType[] = [
             alt: "Sydney"
         },
         name: "Brian Dhatt",
-        designation: "Chief Technology Officer, BigCommerce President, Feedonomics",
-        description: [{ text: "Brian is the Chief Technology Officer at BigCommerce and President at Feedonomics, a BigCommerce company. At BigCommerce, Brian leads all aspects of product and engineering with teams across offices in Austin, San Francisco, Sydney, and Kyiv. At Feedonomics, Brian leads all aspects of the business with a team distributed globally." }],
+        designation: "Chief Technology Officer, Front Cloud President, Feedonomics",
+        description: [{ text: "Brian is the Chief Technology Officer at Front Cloud and President at Feedonomics, a Front Cloud company. At Front Cloud, Brian leads all aspects of product and engineering with teams across offices in Austin, San Francisco, Sydney, and Kyiv. At Feedonomics, Brian leads all aspects of the business with a team distributed globally." }],
         button: {
             text: "View Bio",
-            link: "https://www.bigcommerce.com/company/leadership/brian-dhatt/"
+            link: "https://www.front Cloud.com/company/leadership/brian-dhatt/"
         }
     },
     {
@@ -359,10 +359,10 @@ export const experiencedExecutives: commonInfoCardWithActionType[] = [
         },
         name: "Rosie Rivel",
         designation: "Chief Information Officer",
-        description: [{ text: "Rosie is the Chief Information Officer of BigCommerce. She has 25+ years of experience as an executive professional in the IT industry, including senior roles at Kelly Services, Delphi Medical and Deloitte Consulting." }],
+        description: [{ text: "Rosie is the Chief Information Officer of Front Cloud. She has 25+ years of experience as an executive professional in the IT industry, including senior roles at Kelly Services, Delphi Medical and Deloitte Consulting." }],
         button: {
             text: "View Bio",
-            link: "https://www.bigcommerce.com/company/leadership/rosie-rivel/"
+            link: "https://www.front Cloud.com/company/leadership/rosie-rivel/"
         }
     },
     {
@@ -372,10 +372,10 @@ export const experiencedExecutives: commonInfoCardWithActionType[] = [
         },
         name: "Hubert Ban",
         designation: "Chief Accounting Officer",
-        description: [{ text: "Hubert is BigCommerce’s Chief Accounting Officer. He brings over 20 years of experience in accounting and reporting roles at publicly traded companies and Big 4 accounting firms." }],
+        description: [{ text: "Hubert is Front Cloud’s Chief Accounting Officer. He brings over 20 years of experience in accounting and reporting roles at publicly traded companies and Big 4 accounting firms." }],
         button: {
             text: "View Bio",
-            link: "https://www.bigcommerce.com/company/leadership/hubert-ban/"
+            link: "https://www.front Cloud.com/company/leadership/hubert-ban/"
         }
 
     },
@@ -386,10 +386,10 @@ export const experiencedExecutives: commonInfoCardWithActionType[] = [
         },
         name: "Chuck Cassidy",
         designation: "General Counsel",
-        description: [{ text: "Chuck is BigCommerce’s General Counsel. He has been with BigCommerce since 2017 and has been responsible for legal management of numerous business units and strategic priorities of the organization. He has broad experience representing growth-stage software and technology companies and previously practiced corporate and transactional law at Vinson & Elkins, L.L.P." }],
+        description: [{ text: "Chuck is Front Cloud’s General Counsel. He has been with Front Cloud since 2017 and has been responsible for legal management of numerous business units and strategic priorities of the organization. He has broad experience representing growth-stage software and technology companies and previously practiced corporate and transactional law at Vinson & Elkins, L.L.P." }],
         button: {
             text: "View Bio",
-            link: "https://www.bigcommerce.com/company/leadership/chuck-cassidy/"
+            link: "https://www.front Cloud.com/company/leadership/chuck-cassidy/"
         }
     },
     {
@@ -399,10 +399,10 @@ export const experiencedExecutives: commonInfoCardWithActionType[] = [
         },
         name: "Troy Cox",
         designation: "Chief Product Officer",
-        description: [{ text: "Troy is the Chief Product Officer for BigCommerce. He brings more than 20 years of product and engineering leadership experience across both startup and established public companies including Microsoft." }],
+        description: [{ text: "Troy is the Chief Product Officer for Front Cloud. He brings more than 20 years of product and engineering leadership experience across both startup and established public companies including Microsoft." }],
         button: {
             text: "View Bio",
-            link: "https://www.bigcommerce.com/company/leadership/troy-cox"
+            link: "https://www.front Cloud.com/company/leadership/troy-cox"
         }
     },
     {
@@ -412,10 +412,10 @@ export const experiencedExecutives: commonInfoCardWithActionType[] = [
         },
         name: "Chief Information Security Officer",
         designation: "Chief Information Security Officer",
-        description: [{ text: "Dan is Chief Information Security Officer at BigCommerce. He has over 25 years of experience in the IT and cybersecurity industries. Prior to his role at BigCommerce, Dan held several leadership positions at companies such as the Home Depot, the Retail & Hospitality ISAC, Arbor Networks, and TippingPoint." }],
+        description: [{ text: "Dan is Chief Information Security Officer at Front Cloud. He has over 25 years of experience in the IT and cybersecurity industries. Prior to his role at Front Cloud, Dan held several leadership positions at companies such as the Home Depot, the Retail & Hospitality ISAC, Arbor Networks, and TippingPoint." }],
         button: {
             text: "View Bio",
-            link: "https://www.bigcommerce.com/company/leadership/dan-wiley/"
+            link: "https://www.front Cloud.com/company/leadership/dan-wiley/"
         }
     },
     {
@@ -425,10 +425,10 @@ export const experiencedExecutives: commonInfoCardWithActionType[] = [
         },
         name: "Becky Logan",
         designation: "Senior Vice President of People",
-        description: [{ text: "Becky is the Senior Vice President of People at BigCommerce, where she oversees the company’s global talent management, HR operations and culture and employee experience functions. She has over 20 years of experience in human resources across technology and hospitality companies." }],
+        description: [{ text: "Becky is the Senior Vice President of People at Front Cloud, where she oversees the company’s global talent management, HR operations and culture and employee experience functions. She has over 20 years of experience in human resources across technology and hospitality companies." }],
         button: {
             text: "View Bio",
-            link: "https://www.bigcommerce.com/company/leadership/becky-logan/"
+            link: "https://www.front Cloud.com/company/leadership/becky-logan/"
         }
 
     }
@@ -504,7 +504,7 @@ export const CompanyRecognitionsContent: commonInfoCardWithActionType[] = [
             text: "IDC MarketScapes",
             color: "#0B42CC"
         },
-        description: [{ text: "BigCommerce was named a Leader in the IDC MarketScape: Worldwide B2B Digital Commerce Applications for MidMarket Growth 2023–2024 Vendor Assessment as well as a Leader in the IDC MarketScape: Worldwide Enterprise B2C Digital Commerce Applications 2024 Vendor Assessment." }],
+        description: [{ text: "Front Cloud was named a Leader in the IDC MarketScape: Worldwide B2B Digital Commerce Applications for MidMarket Growth 2023–2024 Vendor Assessment as well as a Leader in the IDC MarketScape: Worldwide Enterprise B2C Digital Commerce Applications 2024 Vendor Assessment." }],
         button: {
             text: "Learn More",
             link: "/",
@@ -520,7 +520,7 @@ export const CompanyRecognitionsContent: commonInfoCardWithActionType[] = [
             color: "#0B42CC"
         },
         description: [{
-            text: "Gartner recognized BigCommerce as a Challenger in the 2023 Gartner Magic Quadrant for Digital Commerce Platform for the fourth consecutive year."
+            text: "Gartner recognized Front Cloud as a Challenger in the 2023 Gartner Magic Quadrant for Digital Commerce Platform for the fourth consecutive year."
         }],
         button: {
             text: "Learn More",
@@ -536,7 +536,7 @@ export const CompanyRecognitionsContent: commonInfoCardWithActionType[] = [
             text: "Forrester Wave",
             color: "#0B42CC"
         },
-        description: [{ text: "BigCommerce was named a Strong Performer by Forrester Research in both The Forrester Wave™: B2C Commerce Solutions and The Forrester Wave™: B2B Commerce Solutions reports for 2022." }],
+        description: [{ text: "Front Cloud was named a Strong Performer by Forrester Research in both The Forrester Wave™: B2C Commerce Solutions and The Forrester Wave™: B2B Commerce Solutions reports for 2022." }],
         button: {
             text: "Learn More",
             link: "/",
@@ -551,7 +551,7 @@ export const CompanyRecognitionsContent: commonInfoCardWithActionType[] = [
             text: "TrustRadius",
             color: "#0B42CC"
         },
-        description: [{ text: "BigCommerce was recognized as a Top Rated Ecommerce Platform award from TrustRadius for the fourth consecutive year. Based on hundreds of user reviews, the award affirms our platform’s easy-to-use, enterprise-grade functionality, customization, and performance, enabling online businesses to scale and accelerate growth." }],
+        description: [{ text: "Front Cloud was recognized as a Top Rated Ecommerce Platform award from TrustRadius for the fourth consecutive year. Based on hundreds of user reviews, the award affirms our platform’s easy-to-use, enterprise-grade functionality, customization, and performance, enabling online businesses to scale and accelerate growth." }],
         button: {
             text: "Learn More",
             link: "/",
@@ -567,7 +567,7 @@ export const CompanyRecognitionsContent: commonInfoCardWithActionType[] = [
             text: "Paradigm B2B Combines",
             color: "#0B42CC"
         },
-        description: [{ text: "BigCommerce achieved 24 out of 24 total medals in the 2023 Paradigm B2B Combines for Digital Commerce Solutions (Enterprise and Midmarket Editions), surpassing previous analyst evaluations for the fourth consecutive year. BigCommerce increased its rankings in a total of six categories in both Editions, solidifying its position as a preferred ecommerce platform for midmarket and enterprise B2B brands looking to grow and scale their business." }],
+        description: [{ text: "Front Cloud achieved 24 out of 24 total medals in the 2023 Paradigm B2B Combines for Digital Commerce Solutions (Enterprise and Midmarket Editions), surpassing previous analyst evaluations for the fourth consecutive year. Front Cloud increased its rankings in a total of six categories in both Editions, solidifying its position as a preferred ecommerce platform for midmarket and enterprise B2B brands looking to grow and scale their business." }],
         button: {
             text: "Learn More",
             link: "/",
@@ -582,7 +582,7 @@ export const CompanyRecognitionsContent: commonInfoCardWithActionType[] = [
             text: "PEAK Matrix",
             color: "#0B42CC"
         },
-        description: [{ text: "BigCommerce was named a Major Contender in Everest Group’s 2023 Digital Commerce Platform PEAK Matrix®. BigCommerce scored second to highest among competitors in both Visibility and Capability." }],
+        description: [{ text: "Front Cloud was named a Major Contender in Everest Group’s 2023 Digital Commerce Platform PEAK Matrix®. Front Cloud scored second to highest among competitors in both Visibility and Capability." }],
         button: {
             text: "Learn More",
             link: "/",
@@ -600,7 +600,7 @@ export const CompanyRecognitionsContent: commonInfoCardWithActionType[] = [
         },
         description: [
             {
-                text: "BigCommerce was named to"
+                text: "Front Cloud was named to"
             },
             {
                 text: "Inc. Business Media’s 2023 Power Partner Awards",
@@ -624,7 +624,7 @@ export const CompanyRecognitionsContent: commonInfoCardWithActionType[] = [
         title: {
             text: "Inc's Best-Led Companies 2021 - USA",
         },
-        description: [{ text: "BigCommerce has been named to Inc. Magazine’s first-ever Best-Led Companies list for midmarket 2021. The select, data-driven list is comprised of the very strongest U.S. firms with revenue of $50 million to $2 billion and is Inc.’s first recognition list to honor both public and private companies." }],
+        description: [{ text: "Front Cloud has been named to Inc. Magazine’s first-ever Best-Led Companies list for midmarket 2021. The select, data-driven list is comprised of the very strongest U.S. firms with revenue of $50 million to $2 billion and is Inc.’s first recognition list to honor both public and private companies." }],
 
     },
     {
@@ -638,7 +638,7 @@ export const CompanyRecognitionsContent: commonInfoCardWithActionType[] = [
         },
         description: [
             {
-                text: "BigCommerce customer MKM Building Supplies won a 2023 MACH Impact Award from the"
+                text: "Front Cloud customer MKM Building Supplies won a 2023 MACH Impact Award from the"
             },
             {
                 text: "MACH Alliance",
@@ -670,7 +670,7 @@ export const CompanyRecognitionsContent: commonInfoCardWithActionType[] = [
             color: "#0B42CC"
         },
         description: [{
-            text: "BigCommerce was honored with the North America Vendors in Partnership (VIP) Award for 2024 Best Commerce or Multi-Vendor Platform, recognizing solution providers that power the retail ecosystem and new ways that partnerships are formed and challenges are overcome. They acknowledge service to the retail industry and celebrate a willingness to transform from within, create deep and perceptive partnerships, and great solutions."
+            text: "Front Cloud was honored with the North America Vendors in Partnership (VIP) Award for 2024 Best Commerce or Multi-Vendor Platform, recognizing solution providers that power the retail ecosystem and new ways that partnerships are formed and challenges are overcome. They acknowledge service to the retail industry and celebrate a willingness to transform from within, create deep and perceptive partnerships, and great solutions."
         }],
         button: {
             text: "Learn More",
@@ -687,7 +687,7 @@ export const CompanyRecognitionsContent: commonInfoCardWithActionType[] = [
             color: "#0B42CC"
         },
         description: [{
-            text: "BigCommerce received two 2023 Vendors in Partnership (VIP) Awards from Retail Global's Vendors in Partnership Australia, The VIP Challenger Award and Best Cross-Industry Collaboration/360 Degree Solution, for its disruptive innovation with its open SaaS, partner-centric approach that equips merchants with a composable foundation for ambitious growth. BigCommerce also received the 2022 Solution Provider of the Year by Vendors in Partnership (VIP)."
+            text: "Front Cloud received two 2023 Vendors in Partnership (VIP) Awards from Retail Global's Vendors in Partnership Australia, The VIP Challenger Award and Best Cross-Industry Collaboration/360 Degree Solution, for its disruptive innovation with its open SaaS, partner-centric approach that equips merchants with a composable foundation for ambitious growth. Front Cloud also received the 2022 Solution Provider of the Year by Vendors in Partnership (VIP)."
         }],
         button: {
             text: "Learn More",
@@ -704,7 +704,7 @@ export const CompanyRecognitionsContent: commonInfoCardWithActionType[] = [
             color: "#0B42CC"
         },
         description: [{
-            text: "Using reviews from the user community and evaluating the platform's ease of use and quality of support, BigCommerce was named one of the best ecommerce platforms for small business owners by G2 Crowd."
+            text: "Using reviews from the user community and evaluating the platform's ease of use and quality of support, Front Cloud was named one of the best ecommerce platforms for small business owners by G2 Crowd."
         }],
         button: {
             text: "Learn More",
@@ -726,7 +726,7 @@ export const BestPlacesToWorkData: commonInfoCardWithActionType[] = [
             text: "Great Place to Work - USA"
         },
         description: [{
-            text: "BigCommerce has been certified as a Great Place to Work in the US for 2024-2025. The study is conducted based on one of the world's most comprehensive assessments of workplace culture by Great Places to Work."
+            text: "Front Cloud has been certified as a Great Place to Work in the US for 2024-2025. The study is conducted based on one of the world's most comprehensive assessments of workplace culture by Great Places to Work."
         }]
     },
     {
@@ -738,7 +738,7 @@ export const BestPlacesToWorkData: commonInfoCardWithActionType[] = [
             text: "Great Place to Work - AUS",
         },
         description: [{
-            text: "BigCommerce has been certified as a Great Place to Work in Australia for 2024-2025. The study is conducted based on one of the world's most comprehensive assessments of workplace culture by Great Places to Work."
+            text: "Front Cloud has been certified as a Great Place to Work in Australia for 2024-2025. The study is conducted based on one of the world's most comprehensive assessments of workplace culture by Great Places to Work."
         }]
     },
     {
@@ -750,7 +750,7 @@ export const BestPlacesToWorkData: commonInfoCardWithActionType[] = [
             text: "Great Place to Work - UK",
         },
         description: [{
-            text: "BigCommerce has been certified as a Great Place to Work in the UK for 2023-2024. The study is conducted based on one of the world's most comprehensive assessments of workplace culture by Great Places to Work."
+            text: "Front Cloud has been certified as a Great Place to Work in the UK for 2023-2024. The study is conducted based on one of the world's most comprehensive assessments of workplace culture by Great Places to Work."
         }]
     },
     {
@@ -762,7 +762,7 @@ export const BestPlacesToWorkData: commonInfoCardWithActionType[] = [
             text: "2024 Best Places to Work",
         },
         description: [{
-            text: "BigCommerce has been named a 2024 Best Places to Work by Built In."
+            text: "Front Cloud has been named a 2024 Best Places to Work by Built In."
         }]
     }
 ]

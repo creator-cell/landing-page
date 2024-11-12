@@ -65,10 +65,10 @@ const Services = () => {
     ]
 
     return (
-        <div className='w-full py-[96px] bg-black'>
+        <div className='w-full  bg-black'>
             <div className='container w-full '>
                 <div className='w-full pb-[32px]'>
-                    <h1 className='text-[#c1c1c5] text-center text-[20px] font-[400] leading-[1.6]'>BigCommerce is the <span className='text-[#FEFEFF]'>most trusted</span>  commerce solution provider.</h1>
+                    <h1 className='text-[#c1c1c5] text-center text-[20px] font-[400] leading-[1.6]'>Front CLoud is the <span className='text-[#FEFEFF]'>most trusted</span>  commerce solution provider.</h1>
                     <h1 className='text-[#c1c1c5] text-center text-[13px] font-[400] leading-[1.6]'>The Forrester Wave™ B2C and B2B Commerce Solutions Q2, 2022</h1>
                 </div>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-[32px]'>
