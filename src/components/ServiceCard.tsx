@@ -10,6 +10,8 @@ import Image from "next/image"
 import Link from "next/link"
 import React from 'react'
 
+
+
 interface descriptionTextType {
     title: string
     color: string
