@@ -20,6 +20,7 @@ const Services = () => {
                     <h1 className="text-[#c1c1c5] text-center text-[13px] font-[400] leading-[1.6]">
                         The Forrester Wave™ B2C and B2B Commerce Solutions Q2, 2022
                     </h1>
+
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-8">
                     {serviceDetails.map((service, index) => (
