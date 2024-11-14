@@ -21,7 +21,6 @@ const Services = () => {
                         The Forrester Wave™ B2C and B2B Commerce Solutions Q2, 2022
                     </h1>
                 </div>
-
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-8">
                     {serviceDetails.map((service, index) => (
                         <ServiceCard key={index} name={service.name} color={service.color} />
