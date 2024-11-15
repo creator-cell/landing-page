@@ -24,16 +24,6 @@ export default function Home() {
         className="flex flex-col gap-y-7 pb-20"
       />
 
-      {/* <div className="flex flex-col gap-y-7 pb-20" id="service">
-        <span className='mt-[-20px] pb-[96px] block' id={"service"}>
-          &nbsp;
-        </span>
-        <CustomHeading title="About Us" className="text-white text-center" >
-          Our Services
-        </CustomHeading>
-        <Services />
-      </div> */}
-
       <SectionWrapper
         Component={() => (
           <>
