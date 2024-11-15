@@ -2,16 +2,40 @@ import React from 'react';
 
 const Services = () => {
     const serviceDetails = [
-        { name: "Custom Software Development", color: "#FF5733" },
-        { name: "Cloud Enablement", color: "#33C9FF" },
-        { name: "IT Management System", color: "#FF33A6" },
-        { name: "Digital Transformation", color: "#33FF57" },
-        { name: "Software Modernization", color: "#335BFF" },
-        { name: "Software Consulting", color: "#FF8C33" },
+        {
+            name: "Custom Software Development",
+            description: "When bullding custom software from scratch, we ensure workflows that are easily understandable for users, maintainable code, and comprehensive supporting documentation.",
+            color: "#FF5733"
+        },
+        {
+            name: "Cloud Enablement",
+            description: "We will help you leverage cloud possibilities and ensure easy scalability, advanced security, and cost savings for your infrastructure and apps hosted in the cloud.",
+            color: "#33C9FF"
+        },
+        {
+            name: "IT Management System",
+            description: "We will help you standard by standard to implement Optimize and achieve your objective like Resilience to cyber-attacks, Preparedness for new threats Data integrity, confidentiality and availability, Security across all supports, Organization-wide protection Cost savings",
+            color: "#FF33A6"
+        },
+        {
+            name: "Digital Transformation",
+            description: "Whether you plan to digitally transform one business process or all the business areas, we will analyze what challenges you need to solve and develop a fitting I strategy.",
+            color: "#33FF57"
+        },
+        {
+            name: "Software Modernization",
+            description: "We will assess your legacy software and offer modernization activities to improve its overall efficiency and cut software maintenance costs,",
+            color: "#335BFF"
+        },
+        {
+            name: "Software Consulting",
+            description: "We will address any software-related challenges or blockers to help you avoid costly mistakes when building new software or draw maximum business value from your existing systems and products.",
+            color: "#FF8C33"
+        },
     ];
 
     return (
-        <div className="w-full bg-black">
+        <div className="w-full bg-black ">
             <div className="container w-full">
                 <div className="w-full pb-8">
                     <h1 className="text-[#c1c1c5] text-center text-[20px] font-[400] leading-[1.6]">
@@ -22,9 +46,15 @@ const Services = () => {
                     </h1>
 
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-8">
+                <div className="flex flex-col gap-y-16 py-8 w-full items-center justify-center">
                     {serviceDetails.map((service, index) => (
-                        <ServiceCard key={index} name={service.name} color={service.color} />
+                        <ServiceCard
+                            key={index}
+                            name={service.name}
+                            description={service.description}
+                            color={service.color}
+                            isReversed={index % 2 !== 0}
+                        />
                     ))}
                 </div>
             </div>
@@ -36,10 +66,15 @@ const Services = () => {
 
 
 
-const ServiceCard = ({ name, color }: { name: string, color: string }) => {
+const ServiceCard = ({ name, color, isReversed, description }: { name: string, color: string, isReversed: boolean, description: string }) => {
     return (
-        <div className={`p-4 rounded-md text-white`} style={{ backgroundColor: color }}>
-            <h2 className="text-lg font-semibold">{name}</h2>
+        <div className={`w-full flex flex-col  ${isReversed ? "sm:flex-row-reverse" : "sm:flex-row"} justify-between items-start gap-x-16 gap-y-4`}>
+            <div className={`p-4 rounded-md text-white w-full sm:w-1/2`} style={{ backgroundColor: color }}>
+                <h2 className="text-lg font-semibold">{name}</h2>
+            </div>
+            <div className='text-gray-200 sm:w-1/2'>
+                {description}
+            </div>
         </div>
     );
 };

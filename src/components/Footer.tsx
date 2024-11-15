@@ -22,7 +22,7 @@ const Footer = () => {
                                 <ul className='space-y-1'>
                                     {section.links.map((link, idx) => (
                                         <li key={idx}>
-                                            <Link href={link.href} className="hover:underline  text-[14px] font-[200]">
+                                            <Link href={`#${link.href}`} className="hover:underline  text-[14px] font-[200]">
                                                 {link.label}
                                             </Link>
                                         </li>

@@ -7,44 +7,15 @@
                 "links": [
                     {
                         "label": "About Us",
-                        "href": "/aboutus"
+                        "href": "aboutUs"
                     },
                     {
-                        "label": "Leaders",
-                        "href": "/aboutus/leaders"
+                        "label": "Service",
+                        "href": "service"
                     },
                     {
-                        "label": "Careers",
-                        "href": "/careers"
-                    },
-                    {
-                        "label": "Press",
-                        "href": "/press"
-                    },
-                    {
-                        "label": "Awards",
-                        "href": "/aboutus/awards"
-                    },
-                    {
-                        "label": "Investor Relations",
-                        "href": "/investor-relations"
-                    },
-                    {
-                        "label": "Sitemaps",
-                        "href": "/sitemap"
-                    }
-                ]
-            },
-            {
-                "section": "Help Center",
-                "links": [
-                    {
-                        "label": "Videos",
-                        "href": "/videos"
-                    },
-                    {
-                        "label": "Contact Tech Support",
-                        "href": "/tech-support"
+                        "label": "Contact",
+                        "href": "contactUs"
                     }
                 ]
             }
