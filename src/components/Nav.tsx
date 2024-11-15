@@ -71,7 +71,7 @@ const Nav = () => {
         <>
             {isSticky && <div className='w-full h-24' />}
 
-            <div className={`flex flex-col w-full text-deep_blue-100 bg-white ${isSticky ? 'fixed z-40 top-0 border-b shadow-md' : ''}`}>
+            <div className={`flex flex-col w-full text-deep_blue-100 bg-white ${isSticky ? 'fixed z-[100] top-0 border-b shadow-md' : ''}`}>
                 <nav className="container w-full px-3 h-24 mx-auto flex items-center justify-between">
                     <div className='flex gap-12 items-center h-full'>
                         <Link href={"/"}>

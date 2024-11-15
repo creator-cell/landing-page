@@ -68,11 +68,14 @@ const Services = () => {
 
 const ServiceCard = ({ name, color, isReversed, description }: { name: string, color: string, isReversed: boolean, description: string }) => {
     return (
-        <div className={`w-full flex flex-col  ${isReversed ? "sm:flex-row-reverse" : "sm:flex-row"} justify-between items-start gap-x-16 gap-y-4`}>
-            <div className={`p-4 rounded-md text-white w-full sm:w-1/2`} style={{ backgroundColor: color }}>
-                <h2 className="text-lg font-semibold">{name}</h2>
+        <div className={`w-full flex flex-col relative ${isReversed ? "sm:flex-row-reverse" : "sm:flex-row"} justify-between items-start gap-x-16 gap-y-4`}>
+            <div className={`w-full sm:w-1/2 relative  flex flex-col  `}>
+                <div className={`p-6 py-9 rounded-md text-white w-full sm:w-80 z-50 ${isReversed ? "self-end" : "self-start"} `} style={{ backgroundColor: color }}>
+                    <h2 className="text-lg font-semibold">{name}</h2>
+                </div>
+                <div className={`h-px hidden sm:block bg-white w-full absolute ${!isReversed ? "right-0" : "-left-8"}  bottom-1/2 transform ${isReversed ? "-translate-x-1/2" : "translate-x-1/2"} z-30`} />
             </div>
-            <div className='text-gray-200 sm:w-1/2'>
+            <div className='text-gray-200 sm:w-1/2 bg-black z-50 min-h-32 p-6'>
                 {description}
             </div>
         </div>
