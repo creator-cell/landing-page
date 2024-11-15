@@ -63,9 +63,6 @@ const Services = () => {
 };
 
 
-
-
-
 const ServiceCard = ({ name, color, isReversed, description }: { name: string, color: string, isReversed: boolean, description: string }) => {
     return (
         <div className={`w-full flex flex-col relative ${isReversed ? "sm:flex-row-reverse" : "sm:flex-row"} justify-between items-start gap-x-16 gap-y-4`}>
