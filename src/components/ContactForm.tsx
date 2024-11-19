@@ -49,7 +49,6 @@ const ContactForm: React.FC<ContactFormProps> = ({
             if (!response.ok) {
                 throw new Error('Failed to save contact');
             }
-
             console.log('Form submitted and data saved:', data);
             toast.success('Your message has been saved!');
             reset();
