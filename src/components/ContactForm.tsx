@@ -5,6 +5,8 @@ import { Button } from "./ui/button";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { toast } from "sonner";
+import React, { Dispatch, SetStateAction } from "react";
 
 // Define the validation schema with Zod
 const formSchema = z.object({
@@ -16,19 +18,48 @@ const formSchema = z.object({
 // Define the form data type based on the schema
 type FormData = z.infer<typeof formSchema>;
 
-const ContactForm = () => {
+
+interface ContactFormProps {
+    closeForm?: Dispatch<SetStateAction<boolean>>
+}
+
+const ContactForm: React.FC<ContactFormProps> = ({
+    closeForm
+}) => {
     const {
         register,
         handleSubmit,
         formState: { errors },
+        reset
     } = useForm<FormData>({
         resolver: zodResolver(formSchema),
     });
 
-    const onSubmit = (data: FormData) => {
-        console.log("Form submitted:", data);
-        // handle form submission logic here, such as sending to an API
+    const onSubmit = async (data: FormData) => {
+        console.log("🚀 ~ onSubmit ~ data:", data)
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            });
+
+            if (!response.ok) {
+                throw new Error('Failed to save contact');
+            }
+
+            console.log('Form submitted and data saved:', data);
+            toast.success('Your message has been saved!');
+            reset();
+            closeForm?.(false);
+        } catch (error) {
+            console.error(error);
+            toast.error('Failed to submit the form. Please try again.');
+        }
     };
+
 
     return (
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 w-full max-w-full">

@@ -1,0 +1,54 @@
+[
+    {
+        "companyName": "John Doe",
+        "subscription": {
+            "startDate": "2024-01-01T10:00:00Z",
+            "endDate": "2024-12-31T10:00:00Z"
+        },
+        "contactInformation": {
+            "address": "123 Maple Street, Springfield",
+            "contactNumber": "1234567890",
+            "countryCode": "+1",
+            "email": "john.doe@example.com"
+        }
+    },
+    {
+        "companyName": "Jane Smith",
+        "subscription": {
+            "startDate": "2024-03-15T08:30:00Z",
+            "endDate": "2024-09-15T08:30:00Z"
+        },
+        "contactInformation": {
+            "address": "456 Elm Avenue, Gotham",
+            "contactNumber": "9876543210",
+            "countryCode": "+44",
+            "email": "jane.smith@example.co.uk"
+        }
+    },
+    {
+        "companyName": "Alice Johnson",
+        "subscription": {
+            "startDate": "2023-11-01T09:00:00Z",
+            "endDate": "2024-11-01T09:00:00Z"
+        },
+        "contactInformation": {
+            "address": "789 Pine Lane, Metropolis",
+            "contactNumber": "5647382910",
+            "countryCode": "+91",
+            "email": "alice.johnson@example.in"
+        }
+    },
+    {
+        "companyName": "Bob Williams",
+        "subscription": {
+            "startDate": "2022-05-10T14:00:00Z",
+            "endDate": "2023-05-10T14:00:00Z"
+        },
+        "contactInformation": {
+            "address": "321 Oak Boulevard, Smallville",
+            "contactNumber": "2109876543",
+            "countryCode": "+81",
+            "email": "bob.williams@example.jp"
+        }
+    }
+]

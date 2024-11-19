@@ -21,7 +21,6 @@ import {
 import { Input } from "@/components/ui/input"
 import { Label } from './ui/label';
 import { useForm } from 'react-hook-form';
-import { usePathname, useRouter } from 'next/navigation';
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import ContactForm from './ContactForm';
 
@@ -30,6 +29,7 @@ import {
     SheetTrigger,
     SheetContent
 } from "@/components/ui/sheet"
+import { toast } from 'sonner';
 
 // Define Zod schema for validation
 const formSchema = z.object({
@@ -49,23 +49,49 @@ const navLinks = [
 ];
 
 const Nav = () => {
-    const [openMenu, setOpenMenu] = useState(false);
     const [isAlreadyHaveAccount, setIsAlreadyHaveAccount] = useState<boolean | null>(null);
+    const [active, setActive] = React.useState<string>()
+    const [signInModalOpen, setSignInModalOpen] = useState(false)
 
     const isMobile = useMediaQuery('(max-width: 640px)');
     const isSticky = useScroll();
 
-    const { register, handleSubmit, formState: { errors } } = useForm<FormData>({
+    const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>({
         resolver: zodResolver(formSchema),
     });
 
-    const onSubmit = (data: FormData) => {
-        console.log("Form submitted:", data);
-        setIsAlreadyHaveAccount(null);
-        // handle form submission logic here
+    const onSubmit = async (data: FormData) => {
+        try {
+            const response = await fetch('/api/sign-in', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            });
+
+            if (!response.ok) {
+                throw new Error('Failed to save contact');
+            }
+
+            const { exists } = await response.json();
+            console.log('Form submitted and data saved:', exists);
+
+            if (exists) {
+                toast.success('Sign In Success');
+                reset();
+                setSignInModalOpen(false);
+            }
+            else {
+                toast.error('Sign In Failed');
+            }
+        } catch (error) {
+            console.error(error);
+            toast.error('Failed to submit the form. Please try again.');
+        }
     };
 
-    const [active, setActive] = React.useState<string>()
+
 
     return (
         <>
@@ -101,7 +127,7 @@ const Nav = () => {
                             ))}
                         </div>
 
-                        <Dialog>
+                        <Dialog open={signInModalOpen} onOpenChange={setSignInModalOpen}>
                             <DialogTrigger asChild>
                                 <Button variant="default" className='uppercase text-[0.875rem] leading-[1.375rem] font-medium tracking-[0.05em] py-2 px-6 max-md:px-3 max-sm:py-0 bg-white hover:bg-white text-black'>
                                     Sign In
@@ -181,7 +207,7 @@ const Nav = () => {
                                         <Button type="submit">Submit</Button>
                                     </form>
                                 ) : (
-                                    <ContactForm />
+                                    <ContactForm closeForm={setSignInModalOpen} />
                                 )}
                             </DialogContent>
                         </Dialog>
