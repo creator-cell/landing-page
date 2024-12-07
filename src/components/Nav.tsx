@@ -30,6 +30,8 @@ import {
     SheetContent
 } from "@/components/ui/sheet"
 import { toast } from 'sonner';
+import { useRouter } from 'next/navigation';
+
 
 // Define Zod schema for validation
 const formSchema = z.object({
@@ -49,6 +51,9 @@ const navLinks = [
 ];
 
 const Nav = () => {
+
+    const router = useRouter();
+
     const [isAlreadyHaveAccount, setIsAlreadyHaveAccount] = useState<boolean | null>(null);
     const [active, setActive] = React.useState<string>()
     const [signInModalOpen, setSignInModalOpen] = useState(false)
@@ -81,6 +86,7 @@ const Nav = () => {
                 toast.success('Sign In Success');
                 reset();
                 setSignInModalOpen(false);
+                router.push("https://doosan.frontcloudsolutions.com");
             }
             else {
                 toast.error('Sign In Failed');
