@@ -55,7 +55,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
                         ) : (
                             <span
                                 key={index}
-                                className={`text-[${desc.color}]`}
+                            // className={`text- `}
+                            // className={`text-[${desc.color}]`}
                             >
                                 {desc.title}
                             </span>
