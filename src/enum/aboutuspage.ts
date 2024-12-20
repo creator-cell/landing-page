@@ -19,7 +19,7 @@ export const aboutUsTop: AboutUsTopType = {
     description: [
         {
             content:
-                "Front Cloud (Nasdaq: BIGC) is a leading open SaaS and composable ecommerce platform that empowers brands and retailers of all sizes to build, innovate and grow their businesses online. Front Cloud provides its customers sophisticated enterprise-grade functionality, customization and performance with simplicity and ease-of-use. Tens of thousands of B2C and B2B companies across 150 countries and numerous industries rely on Front Cloud, including Burrow, Coldwater Creek, Francesca’s, Harvey Nichols, King Arthur Baking Co., MKM Building Supplies, United Aqua Group and Uplift Desk. For more information, please visit ",
+                "Front Cloud is a leading PaaS and micro services platform that empowers brands and retailers of all sizes to build, innovate and grow their businesses online. Front Cloud provides its customers sophisticated enterprise-grade functionality, customization and performance with simplicity and ease-of-use. Tens of thousands of B2C and B2B",
         },
         {
             content: "www.frontCloud.com",
