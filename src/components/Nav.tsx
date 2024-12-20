@@ -91,6 +91,9 @@ const Nav = () => {
             else {
                 toast.error('Sign In Failed');
             }
+
+
+
         } catch (error) {
             console.error(error);
             toast.error('Failed to submit the form. Please try again.');
