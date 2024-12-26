@@ -2,16 +2,20 @@ import AboutUs from "@/components/AboutUs";
 import ContactForm from "@/components/ContactForm";
 import { CustomHeading } from "@/components/custom/CustomHeading";
 import Hero from "@/components/Hero";
+import HeroCarousal from "@/components/home/HeroCarousal";
 import HomeServiceSlider from "@/components/home/HomeServiceSlider";
 import Services from "@/components/Services";
+import { Separator } from "@/components/ui/separator";
 import { SectionWrapper } from "@/hoc";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start container mx-auto">
-      <Hero />
-
+    <main className="flex min-h-screen flex-col items-center justify-start  mx-auto">
+      {/* <Hero /> */}
+      <HeroCarousal />
+      <Separator className="h-3 bg-white" />
+      {/* <div className="bg-[#55BACA] w-full"> */}
       <SectionWrapper
         Component={() => (
           <>
@@ -22,9 +26,11 @@ export default function Home() {
           </>
         )}
         idName="service"
-        className="flex flex-col gap-y-7 pb-20"
+        className="flex flex-col gap-y-7 pb-20 container "
       />
+      {/* </div> */}
 
+      <Separator className="h-3 bg-white" />
       <SectionWrapper
         Component={() => (
           <>
@@ -35,8 +41,9 @@ export default function Home() {
           </>
         )}
         idName="aboutUs"
-        className="flex flex-col gap-y-7"
+        className="flex flex-col gap-y-7 container"
       />
+      <Separator className="h-3 bg-white" />
       <SectionWrapper
         Component={() => (
           <>
@@ -49,7 +56,7 @@ export default function Home() {
           </>
         )}
         idName="contactUs"
-        className="mx-auto my-10 p-6 rounded-md shadow-md w-full"
+        className="mx-auto mb-10 p-6 rounded-md w-full container"
       />
     </main>
   );

@@ -4,6 +4,7 @@ import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { Toaster } from 'sonner'
+import { Separator } from "@/components/ui/separator";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#1192ca]`}
       >
         <div className="flex flex-col min-h-screen">
           <div className="w-full h-[11px] bg-white" />
@@ -38,6 +39,7 @@ export default function RootLayout({
             {children}
             <Toaster richColors position="top-right" />
           </main>
+          <Separator className="h-3 bg-white" />
           <Footer />
         </div>
       </body>

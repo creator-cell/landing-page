@@ -35,7 +35,7 @@ const Services = () => {
     ];
 
     return (
-        <div className="w-full bg-black ">
+        <div className="w-full bg-[#1192ca] ">
             <div className="container w-full">
                 <div className="w-full pb-8">
                     <h1 className="text-[#c1c1c5] text-center text-[20px] font-[400] leading-[1.6]">

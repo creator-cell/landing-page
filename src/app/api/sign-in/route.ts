@@ -28,8 +28,10 @@ export async function POST(request: Request) {
         // Check if any client matches either the companyName or contactNumber
         const existingClient = clientsData.some(
             (client: any) =>
-                client.companyName === companyName || client.contactInformation.contactNumber === contactNumber
+                client.companyName.toLowerCase() === companyName.toLowerCase() ||
+                client.contactInformation.contactNumber.toLowerCase() === contactNumber.toLowerCase()
         );
+
         console.log("🚀 ~ POST ~ existingClient:", existingClient)
 
         // Return true if a match is found, false otherwise

@@ -11,7 +11,10 @@ export default {
 		extend: {
 			container: {
 				center: true,
-				padding: '1rem'
+				padding: '1rem',
+				screens: {
+					"2xl": "1440px"
+				}
 			},
 			colors: {
 				background: 'hsl(var(--background))',

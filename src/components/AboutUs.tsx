@@ -13,6 +13,7 @@ import CommonLocationCard from '@/components/common/CommonLocationCard'
 import { CustomHeading } from '@/components/custom/CustomHeading'
 import { SectionWrapper } from '@/hoc'
 import { AnimatePresence, motion, useInView } from 'framer-motion'
+import { Button } from './ui/button'
 
 
 const AboutUs = () => {
@@ -44,15 +45,17 @@ const AboutUs = () => {
                         className="space-x-1  mt-[30px] gap-1 mb-24">
                         {aboutUsTop.description.map((item, index) => {
                             return item.link ? (
-                                <Link
-                                    key={index}
-                                    href={item.link}
-                                    className={cn(`text-[20px] font-[400] leading-[1.5] `, item.className)}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    {item.content}
-                                </Link>
+                                <Button asChild>
+                                    <Link
+                                        key={index}
+                                        href={item.link}
+                                        className={cn(`text-[20px] font-[400] leading-[1.5] `, item.className)}
+                                        rel="noopener noreferrer"
+                                    >
+                                        {item.content}
+                                    </Link>
+                                </Button>
+
                             ) : (
                                 <span
                                     key={index}

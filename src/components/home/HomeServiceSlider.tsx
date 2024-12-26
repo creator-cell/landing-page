@@ -114,7 +114,7 @@ const HomeServiceSlider: React.FC = ({
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}
                   exit={{ opacity: 0, y: -20 }}
-                  className="text-3xl w-full  font-[400] text-left">
+                  className="text-3xl md:text-5xl w-full  font-[400] text-left">
                   {servicesData?.[activeIndex]?.name}
                 </motion.p>
               </AnimatePresence>
@@ -128,7 +128,7 @@ const HomeServiceSlider: React.FC = ({
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
                 exit={{ opacity: 0, y: -20 }}
-                className="text-sm  leading-[24px] font-[400]">
+                className="text-sm md:text-lg lg:text-xl  leading-[24px] font-[400]">
                 {/* EmergeX will assist you to better understand and manage workplace
               safety by integrating hazards and incident reporting with
               investigations, actions and metrics reporting. */}
@@ -170,7 +170,7 @@ const HomeServiceSlider: React.FC = ({
             style={{ position: "relative" }}
           >
             {servicesData?.map((item, i) => (
-              <SwiperSlide key={i}>
+              <SwiperSlide key={i} className="bg-white shadow-lg rounded-[16px] border">
                 <div className="w-full ">
                   <div className="w-full px-4 md:min-h-[20rem]">
                     <Image

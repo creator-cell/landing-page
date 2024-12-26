@@ -8,7 +8,7 @@ import footerData from "@/enum/footer.json"
 const Footer = () => {
 
     return (
-        <footer className='bg-black text-gray-50  py-12 border-t-[1px] border-gray-600 '>
+        <footer className='bg-[#1192ca] text-gray-50  py-12 border-t-[1px] border-gray-600 '>
             <div className=' container space-y-8 '>
                 <div className='flex justify-between items-start  '>
                     <div className=''>
