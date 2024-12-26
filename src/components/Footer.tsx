@@ -8,7 +8,7 @@ import footerData from "@/enum/footer.json"
 const Footer = () => {
 
     return (
-        <footer className='bg-[#1192ca] text-gray-50  py-12 border-t-[1px] border-gray-600 '>
+        <footer className='bg-white text-black  py-12 border-t-[1px] border-gray-600 '>
             <div className=' container space-y-8 '>
                 <div className='flex justify-between items-start  '>
                     <div className=''>
@@ -43,7 +43,7 @@ const Footer = () => {
                         <Link href={"/#"} className='' >Instagram</Link>
                     </div>
 
-                    <div className="text-gray-100 font-[300] text-[12px] w-full text-center">
+                    <div className="text-black font-[300] text-[12px] w-full text-center">
                         © Copyright 2003 - 2024 Front Cloud solutions Pty. Ltd. |{' '}
                         <Link href="/privacy-policy" className="underline underline-offset-1">
                             Privacy Policy
