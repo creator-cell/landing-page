@@ -44,7 +44,7 @@ const Footer = () => {
                     </div>
 
                     <div className="text-gray-100 font-[300] text-[12px] w-full text-center">
-                        © Copyright 2003 - 2024 Front Cloud Pty. Ltd. |{' '}
+                        © Copyright 2003 - 2024 Front Cloud solutions Pty. Ltd. |{' '}
                         <Link href="/privacy-policy" className="underline underline-offset-1">
                             Privacy Policy
                         </Link>{' '}

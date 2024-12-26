@@ -2,6 +2,7 @@ import AboutUs from "@/components/AboutUs";
 import ContactForm from "@/components/ContactForm";
 import { CustomHeading } from "@/components/custom/CustomHeading";
 import Hero from "@/components/Hero";
+import HomeServiceSlider from "@/components/home/HomeServiceSlider";
 import Services from "@/components/Services";
 import { SectionWrapper } from "@/hoc";
 import Image from "next/image";
@@ -17,7 +18,7 @@ export default function Home() {
             <CustomHeading title="About Us" className="text-white text-center" >
               Our Services
             </CustomHeading>
-            <Services />
+            <HomeServiceSlider />
           </>
         )}
         idName="service"
