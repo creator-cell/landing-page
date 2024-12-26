@@ -19,28 +19,21 @@ export const aboutUsTop: AboutUsTopType = {
     description: [
         {
             content:
-                "Front Cloud is a leading PaaS and micro services platform that empowers brands and retailers of all sizes to build, innovate and grow their businesses online. Front Cloud provides its customers sophisticated enterprise-grade functionality, customization and performance with simplicity and ease-of-use. Tens of thousands of B2C and B2B",
+                "Front Cloud is a leading PaaS and micro services platform that empowers brands and retailers of all sizes to build, innovate and grow their businesses online. Front Cloud provides its customers sophisticated enterprise-grade functionality, customization and performance with simplicity and ease-of-use.",
         },
         {
-            content: "www.frontCloud.com",
+            content: "Reach Us",
             link: "https://www.frontCloud.com",
             color: "#0B42CC",
             hoverColor: "#121118",
             className: "text-[#0B42CC]  hover:text-[#121118]"
         },
+       
         {
-            content: "or follow us on Twitter, ",
+            content: "Here",
         },
         {
-            content: "X",
-            link: "/",
-            className: "text-[#0B42CC]  hover:text-[#121118]"
-        },
-        {
-            content: "and ",
-        },
-        {
-            content: "LinkedIn",
+            content: "",
             link: "/",
             className: "text-[#0B42CC]  hover:text-[#121118]"
         },
